@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
             productos:[],
-            url:'http://127.0.0.1:5000/productos',
+            url:'https://magalrztto.pythonanywhere.com/productos',
             cargando:true,
             error: false
         }    
@@ -24,7 +24,7 @@ createApp({
             })
         },
         borrar(id){
-        const url = 'http://127.0.0.1:5000/productos/'+ id;
+        const url = 'https://magalrztto.pythonanywhere.com/productos/'+ id;
         
         let options = {
             method: 'DELETE'
